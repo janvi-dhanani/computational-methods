@@ -14,6 +14,7 @@ int main()
     FiniteDifferenceSolver* stepSolver = new ExplicitUpwindFiniteDifferenceSolver(xMin, xMax, tMax, gridPoints, Function::STEP);
     FiniteDifferenceSolver* gaussianSolver = new ExplicitUpwindFiniteDifferenceSolver(xMin, xMax, tMax, gridPoints, Function::GAUSSIAN);
 
+    // This function calculates and prints the exact and numerical solution along with errors.
     stepSolver->printSolution();
     gaussianSolver->printSolution();
 
